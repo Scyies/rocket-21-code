@@ -2,3 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-slate-500;
+}
+
+strong {
+  font-family: "Exo", sans-serif;
+  transform: skew(-15deg);
+}
+
+h1 {
+  font-family: "Mr Dafoe", cursive;
+}
+
+#hello {
+  text-shadow: 0 0 0.1em #FF0084, 0 0 0.2em black,  0 0 5em #FF0084;
+}
