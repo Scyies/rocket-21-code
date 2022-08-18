@@ -2,7 +2,7 @@ import { useLayoutEffect, useState } from "react";
 import classNames from "classnames";
 
 export function Button() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   function handleTheme() {
     if(theme === 'light') {
