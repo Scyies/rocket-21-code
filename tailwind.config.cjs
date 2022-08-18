@@ -5,6 +5,10 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
+    screens: {
+      'md': '768px',
+      'lg': '1440px'
+    },
     extend: {
       animation: {
         'lightStart': 'fade 8s linear',
