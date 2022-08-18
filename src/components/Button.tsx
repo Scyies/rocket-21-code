@@ -37,12 +37,12 @@ export function Button() {
         <input 
           type="checkbox" 
           className='opacity-0 w-0 h-0'
+          onClick={handleTheme}
         />
         <span className={classNames('absolute cursor-pointer top-1 left-1 right-1 bottom-1 w-[76px] transition-all duration-700 rounded-3xl bg-blue-500', {
           'translate-x-0 bg-blue-500': theme === 'light',
           'translate-x-full bg-slate-900': theme === 'dark'
         })}
-          onClick={handleTheme}
         ></span>
       </label>
     </section>
