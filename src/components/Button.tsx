@@ -1,10 +1,8 @@
 import { useLayoutEffect, useState } from "react";
 import classNames from "classnames";
 
-const tema = localStorage.theme;
-
 export function Button() {
-  const [theme, setTheme] = useState(tema);
+  const [theme, setTheme] = useState('light');
 
   function handleTheme() {
     if(theme === 'light') {
