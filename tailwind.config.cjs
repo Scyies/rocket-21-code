@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       animation: {
         'lightStart': 'fade 8s linear',
-        'lightLate': 'fadeL 6s linear'
+        'lightLate': 'fadeL 6s linear',
+        'clickPulse': 'pulse 1s linear'
       },
       keyframes: {
         fade: {
@@ -40,6 +41,14 @@ module.exports = {
           '71%, 82%': { opacity: 1},
           '83%, 85%': { opacity: 0.2},
           '86%, 100%': { opacity: 1}
+        },
+        pulse: {
+          '0%, 100%': {
+            opacity: 1
+          },
+          '50%': {
+            opacity: .5
+          }
         }
       },
       boxShadow: {

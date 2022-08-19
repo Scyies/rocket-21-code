@@ -27,7 +27,7 @@ export function Button() {
     <section className='flex flex-col justify-center place-items-center'>
       <p className='text-xl font-bold text-white p-5'>Botão animado</p>
       <label 
-        className={classNames('relative inline-block h-10 md:h-20 w-20 md:w-40 transition-all duration-700 rounded-3xl bg-white', {
+        className={classNames('relative inline-block h-10 md:h-15 w-20 md:w-25 transition-all duration-700 rounded-3xl bg-white', {
           'bg-white': theme === 'light',
           'bg-blue-900': theme === 'dark'
         })}
@@ -37,7 +37,7 @@ export function Button() {
           className='opacity-0 w-0 h-0'
           onClick={handleTheme}
         />
-        <span className={classNames('absolute cursor-pointer top-1 left-1 right-1 bottom-1 w-[33px] md:w-[76px] transition-all duration-700 rounded-3xl bg-blue-500', {
+        <span className={classNames('absolute cursor-pointer top-1 left-1 right-1 bottom-1 w-[35px] md:w-[35px] transition-all duration-700 rounded-3xl bg-blue-500', {
           'translate-x-0 bg-blue-500': theme === 'light',
           'translate-x-full bg-slate-900': theme === 'dark'
         })}
