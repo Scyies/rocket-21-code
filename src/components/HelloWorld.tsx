@@ -4,23 +4,23 @@ export function HelloWorld() {
       <p className='text-xl font-bold text-white pt-5 text-center'>Hello world customizado</p>
       <div className="flex flex-col place-items-center my-10 w-full h-full justify-center relative">
         <div
-          className="absolute w-screen opacity-0 dark:opacity-100 transition-all duration-650 animate-lightLate"
+          className="absolute w-full opacity-0 dark:opacity-100 transition-all duration-650 animate-lightLate"
           id="lines"
         ></div>
         <div
-          className="absolute w-screen translate-y-3 opacity-0 dark:opacity-100 transition-all duration-700 animate-lightStart"
+          className="absolute w-full translate-y-3 opacity-0 dark:opacity-100 transition-all duration-700 animate-lightStart"
           id="lines"
         ></div>
         <div
-          className="absolute w-screen translate-y-6 opacity-0 dark:opacity-100 transition-all duration-500 animate-lightStart hidden md:block"
+          className="absolute w-full translate-y-6 opacity-0 dark:opacity-100 transition-all duration-500 animate-lightStart hidden md:block"
           id="lines"
         ></div>
         <div
-          className="absolute w-screen -translate-y-3 opacity-0 dark:opacity-100 transition-all duration-600 animate-lightLate"
+          className="absolute w-full -translate-y-3 opacity-0 dark:opacity-100 transition-all duration-600 animate-lightLate"
           id="lines"
         ></div>
         <div
-          className="absolute w-screen -translate-y-6 opacity-0 dark:opacity-100 transition-all duration-300 animate-lightStart hidden md:block"
+          className="absolute w-full -translate-y-6 opacity-0 dark:opacity-100 transition-all duration-300 animate-lightStart hidden md:block"
           id="lines"
         ></div>
 
