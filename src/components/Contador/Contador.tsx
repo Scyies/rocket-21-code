@@ -28,7 +28,7 @@ export function Contador() {
   }
 
   return(
-    <div>
+    <div className='max-w-[500px] mx-auto'>
       <div className='flex flex-col justify-center p-5 place-items-center bg-blue-900 rounded-md m-10'>
         <div className='flex mb-5 bg-gray-900 p-2 rounded-lg shadow-md'>
           <p className='text-xl md:text-7xl text-white p-2 md:p-3 bg-gray-500 rounded-lg m-1'>
