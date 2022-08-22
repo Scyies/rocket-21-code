@@ -7,7 +7,7 @@ export function Contador() {
   const segundos = tempo! % 60;
   const [minutosDezenas, minutosUnidade] = String(minutos).padStart(2, '0');
   const [segundosDezenas, segundosUnidade] = String(segundos).padStart(2, '0');
-  const [newTime, setNewTime] = useState<number>();
+  const [newTime, setNewTime] = useState<number>( );
 
   function regressive(time: number) {
     setTimeout(() => {
@@ -15,13 +15,15 @@ export function Contador() {
         setTempo(time - 1)
         return regressive(time - 1);
       }
+      if (time === 0) {
+        alert('O contador chegou a 0');
+      }
     }, 1000)
   }
 
   function again() {
     if(newTime){
       setTempo(newTime)
-      setNewTime(0)
     }
   }
 
