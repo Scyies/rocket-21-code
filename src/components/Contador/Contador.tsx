@@ -29,31 +29,30 @@ export function Contador() {
     <div>
       <div className='flex flex-col justify-center p-5 place-items-center bg-blue-900 rounded-md m-10'>
         <div className='flex mb-5 bg-gray-900 p-2 rounded-lg shadow-md'>
-          <p className='text-7xl text-white p-3 bg-gray-500 rounded-lg m-1'>
+          <p className='text-xl md:text-7xl text-white p-2 md:p-3 bg-gray-500 rounded-lg m-1'>
             {minutosDezenas}
           </p>
-          <p className='text-7xl text-white p-3 bg-gray-500 rounded-lg m-1'>
+          <p className='text-xl md:text-7xl text-white p-2 md:p-3 bg-gray-500 rounded-lg m-1'>
             {minutosUnidade}
           </p>
-          <p className='text-7xl text-white p-3 bg-gray-500 rounded-lg m-1'>
+          <p className='text-xl md:text-7xl text-white p-2 md:p-3 bg-gray-500 rounded-lg m-1'>
             :
           </p>
-          <p className='text-7xl text-white p-3 bg-gray-500 rounded-lg m-1'>
+          <p className='text-xl md:text-7xl text-white p-2 md:p-3 bg-gray-500 rounded-lg m-1'>
             {segundosDezenas}
           </p >
-          <p className='text-7xl text-white p-3 bg-gray-500 rounded-lg m-1'>
+          <p className='text-xl md:text-7xl text-white p-2 md:p-3 bg-gray-500 rounded-lg m-1'>
             {segundosUnidade}
           </p>
           <button className='text-white' onClick={() => regressive(tempo!)}> 
             <Play size={30} />
           </button>
         </div>
-        <div className='bg-gray-900 rounded-lg p-4 flex flex-col place-items-center justify-center shadow-md'>
-          <p className='text-white pb-2'>Insira o tempo em segundos</p>
+        <div className='bg-gray-900 rounded-lg p-2 md:p-4 flex flex-col place-items-center justify-center shadow-md'>
+          <p className='text-white pb-1 md:pb-2 text-center'>Insira o tempo em segundos</p>
           <div className='flex justify-center'>
             <input type="number" 
-              className='p-1 rounded-md m-1 text-center' 
-              placeholder='Insira o tempo em segundos'
+              className='p-1 rounded-md m-1 text-center min-w-[50px] w-full' 
               value={newTime}
               onChange={e => setNewTime(Number(e.target.value))}
             />
