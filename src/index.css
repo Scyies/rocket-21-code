@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-slate-500;
+  @apply bg-slate-500 dark:bg-slate-900;
 }
 
 h1 {
@@ -20,7 +20,7 @@ span:first-child {
     #8313e7 55%,
     #ff61af 75%
   );
-  -webkit-text-stroke: 0.01em #94a0b9;
+  -webkit-text-stroke: 0.02em #94a0b9;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -45,4 +45,8 @@ h2 {
   box-shadow: 0 0 0.1em #00a1ef, 0 0 0.2em white, 0 0 5em #00a1ef;
 }
 
-/* fixed w-screen h-4 */
+#stroke {
+  -webkit-text-stroke: 0.03em #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }

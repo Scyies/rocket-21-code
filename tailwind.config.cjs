@@ -13,7 +13,8 @@ module.exports = {
       animation: {
         'lightStart': 'fade 8s linear',
         'lightLate': 'fadeL 6s linear',
-        'clickPulse': 'pulse 1s linear'
+        'clickPulse': 'pulse 1s linear',
+        'loadingBar': 'loading 10s linear'
       },
       keyframes: {
         fade: {
@@ -48,6 +49,14 @@ module.exports = {
           },
           '50%': {
             opacity: .5
+          }
+        },
+        loading: {
+          '0%': {
+            width: '1%'
+          },
+          '100%': {
+            width: '98%'
           }
         }
       },
