@@ -4,6 +4,7 @@ import { Contador } from "./components/Contador/Contador"
 import { GlassMorph } from "./components/GlassMorph"
 import { Header } from "./components/Header"
 import { HelloWorld } from "./components/HelloWorld"
+import { LoadingBar } from "./components/LoadingBar"
 import { NotFoundPage } from "./components/NotFoundPage"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <NotFoundPage />
       <GlassMorph />
       <Contador />
+      <LoadingBar />
     </>
   )
 }
