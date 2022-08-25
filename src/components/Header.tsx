@@ -1,9 +1,12 @@
+import classNames from "classnames";
 import { MoonStars, SunHorizon } from "phosphor-react";
 import { useLayoutEffect, useState } from "react";
+import { SideBarMenu } from "./SideBarMenu/SideBarMenu";
 
 export function Header() {
-  const [theme, setTheme] = useState('light');
-
+  let tema = localStorage.theme
+  const [theme, setTheme] = useState<'light' | 'dark'>(tema);
+  
   function handleTheme() {
     if(theme === 'light') {
       setTheme('dark');
@@ -24,13 +27,14 @@ export function Header() {
   })
 
   return(
-    <header className='flex justify-around p-4 border-b-2 border-slate-400 mx-8 place-items-center'>
-      <p className='text-xl text-white font-bold text-center'>21 dias de código RocketSeat</p>
-      <button className='text-yellow-200 dark:text-blue-300 bg-gray-700 dark:bg-gray-500 p-1 rounded-full transition-all aspect-square h-[30px] w-[30px] flex place-items-center'
+    <header className='flex justify-around pr-12 p-4 border-b-2 border-slate-400 mx-8 place-items-center'>
+      <p className='text-xl text-white font-bold text-center break-all'>21 dias de código RocketSeat</p>
+      <button className='text-blue-300 dark:text-yellow-200 bg-gray-700 dark:bg-gray-500 p-1 rounded-full transition-all aspect-square h-[30px] w-[30px] flex place-items-center'
         onClick={handleTheme}
       >
-        {theme === 'light' ? <SunHorizon size={25} /> : <MoonStars size={25} />}
+        {theme === 'light' ? <MoonStars size={25} /> :  <SunHorizon size={25} />}
       </button>
+      <SideBarMenu />
     </header>
   )
 }

@@ -6,6 +6,7 @@ module.exports = {
   darkMode: 'class',
   theme: {
     screens: {
+      'sm': '400px',
       'md': '768px',
       'lg': '1440px'
     },
@@ -14,7 +15,8 @@ module.exports = {
         'lightStart': 'fade 8s linear',
         'lightLate': 'fadeL 6s linear',
         'clickPulse': 'pulse 1s linear',
-        'loadingBar': 'loading 10s linear'
+        'loadingBar': 'loading 10s linear',
+        'fadeIn': 'fadeIn 1s linear',
       },
       keyframes: {
         fade: {
@@ -58,6 +60,10 @@ module.exports = {
           '100%': {
             width: '98%'
           }
+        },
+        fadeIn: {
+          '0%': { opacity: 0},
+          '100%': { opacity: 1 }
         }
       },
       boxShadow: {
