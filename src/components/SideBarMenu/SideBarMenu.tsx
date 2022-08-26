@@ -69,7 +69,7 @@ export function SideBarMenu() {
             <Link to={"/semana2/particles"}>Particles.js</Link>
             <Link to={"/semana2/loginform"}>Login Form</Link>
             <Link to={"/semana2/galeria"}>Galeria de imagens</Link>
-            {/* <Link to={"/glasscard"}>Card glassmorphism</Link> */}
+            <Link to={"/semana2/quizform"}>Quizz</Link>
           </ul>
         </div>
       </div>

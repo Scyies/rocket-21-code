@@ -10,6 +10,7 @@ import { LoadingBar } from './components/LoadingBar';
 import { LoginForm } from './components/LoginForm';
 import { NotFoundPage } from './components/NotFoundPage';
 import { Particle } from './components/Particles';
+import { QuizzForm } from './components/QuizzForm';
 
 export function Router() {
   return(
@@ -28,7 +29,7 @@ export function Router() {
           <Route path='/semana2/particles' element={<Particle />} />
           <Route path='/semana2/loginform' element={<LoginForm />} />
           <Route path='/semana2/galeria' element={<Gallery />} />
-          {/* <Route path='/semana2/quizform' element={<QuizzForm />} /> */}
+          <Route path='/semana2/quizform' element={<QuizzForm />} />
         </Routes>
       </BrowserRouter>
     </>
