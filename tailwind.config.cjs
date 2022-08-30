@@ -70,7 +70,19 @@ module.exports = {
         'rose': '0 35px 60px -15px rgba(199, 110, 121)'
       },
       colors: {
-        pink: '#FF0084'
+        pink: '#FF0084',
+        preto: {
+          900: '#222831',
+          800: '#393E46',
+          700: '#252A34'
+        },
+        azul: {
+          300: '#00ADB5',
+          900: '#112D4E'
+        },
+        branco: {
+          500: '#EEEEEE'
+        }
       }
     },
   },
