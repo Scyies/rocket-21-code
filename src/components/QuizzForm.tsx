@@ -97,6 +97,30 @@ export function QuizzForm() {
     }
   }
 
+  function checkOrX(alternativa: string) {
+    switch (alternativa) {
+      case 'primeiro': {
+        if (quizzes[question].primeira.resultado === 'correta') return <CheckCircle size={20} weight="bold" />
+        else {
+          return <XCircle size={20} weight="bold" />
+        }
+      }
+      break
+      case 'segundo': {
+        if (quizzes[question].segunda.resultado === 'correta') return <CheckCircle size={20} weight="bold" />
+        else {
+          return <XCircle size={20} weight="bold" />
+        }
+      }
+      case 'terceiro': {
+        if (quizzes[question].terceira.resultado === 'correta') return <CheckCircle size={20} weight="bold" />
+        else {
+          return <XCircle size={20} weight="bold" />
+        }
+      } 
+    }
+  }
+
   return (
     <div className="flex flex-col place-items-center p-4 m-8">
       <div className="bg-preto-700 flex flex-col place-items-center max-w-sm text-center rounded-lg">
@@ -112,7 +136,7 @@ export function QuizzForm() {
           onClick={() => clickHandler('primeiro')}
         >
           <i className={classNames("rounded-full aspect-square flex place-items-center justify-center overflow-hidden mr-1 transition-all")}>
-            {state.primeiro === true ? <CheckCircle size={20} weight="bold" /> : <NumberCircleOne size={20} weight="bold" />}
+            {state.primeiro === true ? checkOrX('primeiro') : <NumberCircleOne size={20} weight="bold" />}
           </i>
           <label htmlFor="">{quizzes[question].primeira.texto}</label>
         </div>
@@ -125,7 +149,7 @@ export function QuizzForm() {
           onClick={() => clickHandler('segundo')}
         >
           <i className={classNames("rounded-full aspect-square flex place-items-center justify-center overflow-hidden mr-1 transition-all")}>
-            {state.segundo === true ? <XCircle size={20} weight="bold" /> : <NumberCircleTwo size={20} weight="bold" />}
+            {state.segundo === true ? checkOrX('segundo') : <NumberCircleTwo size={20} weight="bold" />}
           </i>
           <label htmlFor="">{quizzes[question].segunda.texto}</label>
         </div>
@@ -138,7 +162,7 @@ export function QuizzForm() {
           onClick={() => clickHandler('terceiro')}
         >
           <i className={classNames("rounded-full aspect-square flex place-items-center justify-center overflow-hidden mr-1 transition-all")}>
-            {state.terceiro === true ? <XCircle size={20} weight="bold" /> : <NumberCircleThree size={20} weight="bold" /> }
+          {state.terceiro === true ? checkOrX('terceiro') : <NumberCircleTwo size={20} weight="bold" />}
           </i>
           <label htmlFor="">{quizzes[question].terceira.texto}</label>
         </div>
