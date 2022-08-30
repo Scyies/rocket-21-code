@@ -11,6 +11,7 @@ import { LoginForm } from './components/LoginForm';
 import { NotFoundPage } from './components/NotFoundPage';
 import { Particle } from './components/Particles';
 import { QuizzForm } from './components/QuizzForm';
+import VitrineDeProdutos from './components/Vitrine/VitrineDeProdutos';
 
 export function Router() {
   return(
@@ -30,6 +31,7 @@ export function Router() {
           <Route path='/semana2/loginform' element={<LoginForm />} />
           <Route path='/semana2/galeria' element={<Gallery />} />
           <Route path='/semana2/quizform' element={<QuizzForm />} />
+          <Route path='/semana2/vitrineprodutos' element={<VitrineDeProdutos />} />
         </Routes>
       </BrowserRouter>
     </>

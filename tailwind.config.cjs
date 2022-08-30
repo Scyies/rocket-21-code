@@ -69,6 +69,9 @@ module.exports = {
       boxShadow: {
         'rose': '0 35px 60px -15px rgba(199, 110, 121)'
       },
+      fontFamily: {
+        sans: 'Poppins, sans-serif',
+      },
       colors: {
         pink: '#FF0084',
         preto: {
