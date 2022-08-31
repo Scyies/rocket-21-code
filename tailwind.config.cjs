@@ -71,6 +71,7 @@ module.exports = {
       },
       fontFamily: {
         sans: 'Poppins, sans-serif',
+        ricky: 'Patrick Hand'
       },
       colors: {
         pink: '#FF0084',
@@ -85,6 +86,19 @@ module.exports = {
         },
         branco: {
           500: '#EEEEEE'
+        },
+        marrom: {
+          500: '#44281d',
+          100: '#e4a788'
+        },
+        amarelo: {
+          500: '#f0e14a'
+        },
+        verde: {
+          500: '#97ce4c'
+        },
+        rosa: {
+          500: '#e89ac7'
         }
       }
     },

@@ -52,7 +52,7 @@ export function SideBarMenu() {
             Semana 1
           </p>
           <ul className="text-center p-2 flex flex-col">
-            <Link to={"/"}>Hello World</Link>
+            <Link to={"/helloworld"}>Hello World</Link>
             <Link to={"/botao"}>Botão Animado</Link>
             <Link to={"/calculadora"}>Calculadora</Link>
             <Link to={"/notfound"}>Página de erro 404</Link>
@@ -71,6 +71,7 @@ export function SideBarMenu() {
             <Link to={"/semana2/galeria"}>Galeria de imagens</Link>
             <Link to={"/semana2/quizform"}>Quizz</Link>
             <Link to={"/semana2/vitrineprodutos"}>Vitrine de Produtos</Link>
+            <Link to={"/semana2/ricardoemoreira/personanges"}>Site Rick and Morty</Link>
           </ul>
         </div>
       </div>
