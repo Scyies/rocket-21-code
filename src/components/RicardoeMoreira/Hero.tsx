@@ -8,7 +8,7 @@ export default function Hero() {
         alt=""
         className="object-cover max-h-40 w-full"
       />
-      <div className="max-w-5xl mx-5 text-marrom-500 text-2xl">
+      <div className="max-w-5xl mx-auto text-marrom-500 text-2xl">
         <p className="font-bold bottom-8 left-3">
           "Eu não discuto problemas, eu coloco fogo neles"
         </p>
