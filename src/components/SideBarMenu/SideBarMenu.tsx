@@ -71,7 +71,7 @@ export function SideBarMenu() {
             <Link to={"/semana2/galeria"}>Galeria de imagens</Link>
             <Link to={"/semana2/quizform"}>Quizz</Link>
             <Link to={"/semana2/vitrineprodutos"}>Vitrine de Produtos</Link>
-            <Link to={"/semana2/ricardoemoreira/personanges"}>Site Rick and Morty</Link>
+            <Link to={"/semana2/ricardoemoreira/personagens"}>Site Rick and Morty</Link>
           </ul>
         </div>
       </div>
