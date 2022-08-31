@@ -33,7 +33,7 @@ export default function HeaderRicardo() {
     <header className="flex justify-between place-items-center max-w-5xl mx-auto px-4">
       <img src={RickLogo} alt="" className="max-h-24" />
       <nav className="text-2xl">
-        <Link to='/semana2/ricardoemoreira' className="text-marrom-500 mr-5 font-bold hover:bg-azul-300 px-3 py-2 rounded-full">
+        <Link to='' className="text-marrom-500 mr-5 font-bold hover:bg-azul-300 px-3 py-2 rounded-full">
           home
         </Link>
         <Link to='/semana2/ricardoemoreira/personagens' className="text-marrom-500 font-bold hover:bg-azul-300 px-3 py-2 rounded-full">
