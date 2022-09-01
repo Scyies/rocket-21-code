@@ -36,13 +36,11 @@ export default function KeyEvent() {
         break;
     }
   }
-  const divS = document.getElementById('sim');
-  divS?.addEventListener('keyup', ()  => pressK)
+  // document.addEventListener('keydown', () => pressK)
   return (
     <div className="bg-azul-700 dark:bg-roxo-500 max-w-xs mt-8 
     mx-auto p-4 rounded-xl shadow-md"
-      id='sim'
-    >
+      >
       <p className="text-branco-500 text-center font-bold mb-4">
         Use as respectivas teclas no seu teclado para tocar os sons
       </p>
@@ -65,6 +63,11 @@ export default function KeyEvent() {
         <div className="bg-rosa-700 flex justify-center p-3 rounded-full shadow-md">
           D
         </div>
+        <input
+          type="text"
+          onKeyDown={pressK}
+          className="z-10 absolute outline-none col-span-3 row-span-2 w-full h-full opacity-0"
+        />
       </div>
     </div>
   );
