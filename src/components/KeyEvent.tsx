@@ -39,7 +39,7 @@ export default function KeyEvent() {
   return (
     <div className="bg-azul-700 dark:bg-roxo-500 max-w-xs mt-8 
     mx-auto p-4 rounded-xl shadow-md"
-      onKeyDown={pressK}
+      onKeyDown={() => pressK}
     >
       <p className="text-branco-500 text-center font-bold mb-4">
         Use as respectivas teclas no seu teclado para tocar os sons
