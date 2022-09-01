@@ -6,6 +6,7 @@ import { Gallery } from './components/Gallery/Gallery';
 import { GlassMorph } from './components/GlassMorph';
 import { Header } from './components/Header';
 import { HelloWorld } from './components/HelloWorld';
+import KeyEvent from './components/KeyEvent';
 import { LoadingBar } from './components/LoadingBar';
 import { LoginForm } from './components/LoginForm';
 import { NotFoundPage } from './components/NotFoundPage';
@@ -31,9 +32,10 @@ export function Router() {
             <Route path='/semana2/loginform' element={<LoginForm />} />
             <Route path='/semana2/galeria' element={<Gallery />} />
             <Route path='/semana2/quizform' element={<QuizzForm />} />
-            <Route path='/semana2/vitrineprodutos' element={<VitrineDeProdutos />} />
+            <Route path='/semana3/vitrineprodutos' element={<VitrineDeProdutos />} />
+            <Route path='/semana3/keyboardevent' element={<KeyEvent />} />
           </Route>
-          <Route path='/semana2/ricardoemoreira/personagens' element={<RicardoMoreira />} />
+          <Route path='/semana3/ricardoemoreira/personagens' element={<RicardoMoreira />} />
           <Route path='*' element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>

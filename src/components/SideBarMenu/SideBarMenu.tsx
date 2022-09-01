@@ -15,9 +15,12 @@ export function SideBarMenu() {
   return (
     <>
       <div
-        className={classNames("absolute right-12 w-5 h-4 flex flex-col justify-between z-40 cursor-pointer", {
-          "fixed right-12": sideBar === "open",
-        })}
+        className={classNames(
+          "absolute right-12 w-5 h-4 flex flex-col justify-between z-40 cursor-pointer",
+          {
+            "fixed right-12": sideBar === "open",
+          }
+        )}
         onClick={handleSideBar}
       >
         <div
@@ -70,8 +73,18 @@ export function SideBarMenu() {
             <Link to={"/semana2/loginform"}>Login Form</Link>
             <Link to={"/semana2/galeria"}>Galeria de imagens</Link>
             <Link to={"/semana2/quizform"}>Quizz</Link>
-            <Link to={"/semana2/vitrineprodutos"}>Vitrine de Produtos</Link>
-            <Link to={"/semana2/ricardoemoreira/personagens"}>Site Rick and Morty</Link>
+          </ul>
+        </div>
+        <div>
+          <p className="uppercase border-b-2 font-bold mt-4 border-slate-400 mx-20 text-center">
+            Semana 3
+          </p>
+          <ul className="text-center p-2 flex flex-col">
+            <Link to={"/semana3/vitrineprodutos"}>Vitrine de Produtos</Link>
+            <Link to={"/semana3/ricardoemoreira/personagens"}>
+              Site Rick and Morty
+            </Link>
+            <Link to={"/semana3/keyboardevent"}>Evento de teclas</Link>
           </ul>
         </div>
       </div>
