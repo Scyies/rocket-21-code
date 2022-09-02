@@ -1,19 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import emojis from "../emoji.json";
 
 export default function EmojisClip() {
-  const [emojiState, setEmojiState] = useState<string>('');
   function handleCopy(e: any) {
-    setEmojiState(e.target.value)
-    navigator.clipboard.writeText(emojiState);
+    navigator.clipboard.writeText(e.target.value)
   }
-
   return (
     <div className="m-5">
       <div className='max-w-xs mx-auto text-center font-bold text-preto-800 dark:text-branco-500 bg-branco-300 dark:bg-azul-700 rounded-t-2xl p-3'>
         <p>Seu emoji picker!</p>
       </div>
-      <div className="grid grid-cols-4 gap-4 p-4 max-w-xs mx-auto bg-cinza-500 dark:bg-preto-800 rounded-b-2xl">
+      <div className="grid grid-cols-4 gap-4 p-4 max-w-xs mx-auto 
+      bg-cinza-500 dark:bg-preto-800 
+      rounded-b-2xl"
+      >
         {emojis.map((emoji) => (
           <button 
             onClick={handleCopy} 
