@@ -67,7 +67,7 @@ module.exports = {
         }
       },
       boxShadow: {
-        'rose': '0 35px 60px -15px rgba(199, 110, 121)'
+        'rose': '10px 35px 60px -15px rgba(199, 110, 121)'
       },
       fontFamily: {
         sans: 'Poppins, sans-serif',
@@ -78,7 +78,8 @@ module.exports = {
         preto: {
           900: '#222831',
           800: '#393E46',
-          700: '#252A34'
+          700: '#252A34',
+          600: '#212121'
         },
         azul: {
           300: '#00ADB5',
@@ -90,21 +91,29 @@ module.exports = {
           500: '#533483'
         },
         branco: {
-          500: '#EEEEEE'
+          500: '#EEEEEE',
+          400: '#F6F6F6',
+          300: '#fffff0',
+          200: '#F5EDDC'
         },
         marrom: {
           500: '#44281d',
+          200: '#d9cab3',
           100: '#e4a788'
         },
         amarelo: {
           500: '#f0e14a'
         },
         verde: {
-          500: '#97ce4c'
+          500: '#97ce4c',
+          200: '#6d9886'
         },
         rosa: {
           500: '#e89ac7',
           700: '#E94560'
+        },
+        cinza: {
+          500: '#CFD2CF'
         }
       }
     },

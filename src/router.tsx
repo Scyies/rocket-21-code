@@ -2,7 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Button } from './components/Button';
 import { Calculator } from './components/Calculator/Calculator';
 import { Contador } from './components/Contador/Contador';
+import EmojisClip from './components/EmojisClip';
 import { Gallery } from './components/Gallery/Gallery';
+import GeradorDeSenhas from './components/GeradorDeSenhas/GeradorDeSenhas';
 import { GlassMorph } from './components/GlassMorph';
 import { Header } from './components/Header';
 import { HelloWorld } from './components/HelloWorld';
@@ -12,6 +14,7 @@ import { LoginForm } from './components/LoginForm';
 import { NotFoundPage } from './components/NotFoundPage';
 import { Particle } from './components/Particles';
 import { QuizzForm } from './components/QuizzForm';
+import SiteImages from './components/SiteImages/SiteImages';
 import VitrineDeProdutos from './components/Vitrine/VitrineDeProdutos';
 import RicardoMoreira from './pages/RicardoMoreira';
 
@@ -34,8 +37,11 @@ export function Router() {
             <Route path='/semana2/quizform' element={<QuizzForm />} />
             <Route path='/semana3/vitrineprodutos' element={<VitrineDeProdutos />} />
             <Route path='/semana3/keyboardevent' element={<KeyEvent />} />
+            <Route path='/semana3/geradordesenhas' element={<GeradorDeSenhas />} />
+            <Route path='/semana3/emojis' element={<EmojisClip />} />
           </Route>
           <Route path='/semana3/ricardoemoreira/personagens' element={<RicardoMoreira />} />
+          <Route path='/semana3/siteunspash' element={<SiteImages />} />
           <Route path='*' element={<NotFoundPage/>}/>
         </Routes>
       </BrowserRouter>

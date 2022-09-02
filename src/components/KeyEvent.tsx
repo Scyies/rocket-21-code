@@ -36,7 +36,6 @@ export default function KeyEvent() {
         break;
     }
   }
-  // document.addEventListener('keydown', () => pressK)
   return (
     <div className="bg-azul-700 dark:bg-roxo-500 max-w-xs mt-8 
     mx-auto p-4 rounded-xl shadow-md"

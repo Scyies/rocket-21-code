@@ -85,6 +85,9 @@ export function SideBarMenu() {
               Site Rick and Morty
             </Link>
             <Link to={"/semana3/keyboardevent"}>Evento de teclas</Link>
+            <Link to={"/semana3/geradordesenhas"}>Gerador de senhas</Link>
+            <Link to={"/semana3/siteunspash"}>Site com imagens unspash</Link>
+            <Link to={"/semana3/emojis"}>Emoji Clipper</Link>
           </ul>
         </div>
       </div>
