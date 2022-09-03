@@ -38,11 +38,11 @@ export default function SiteImages() {
       >
         {/* <button onClick={fetchAPI}>SIM</button> */}
         <section className="min-h-[calc(100vh-58px)] flex flex-col md:flex-row justify-between">
-          <div className="relative md:max-w-[50vw] justify-around">
-            <p className="font-bold text-3xl text-branco-500 p-3 bg-preto-800 md:mt-[20%]">
+          <div className="relative md:max-w-[50vw] w-full justify-around">
+            <p className="font-bold text-3xl w-full text-branco-500 p-3 bg-preto-800 md:mt-[20%]">
               Todos os dias imagens diferentes para melhorar seu dia!
             </p>
-            <p className="font-bold text-2xl p-3 text-branco-500 bg-preto-900 mt-[20%]">
+            <p className="font-bold text-2xl p-3 w-full text-branco-500 bg-preto-900 mt-[20%]">
               Você pode encontrar inspirações diariamente!
             </p>
           </div>
